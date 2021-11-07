@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (jardas != null) {
                 double valor = Double.parseDouble(jardas.getText().toString());
-                valor = (valor / 1.094);
-                String message = String.format(Locale.getDefault(),"São %.2f metros.", valor );
+                valor = (valor * 91.44);
+                String message = String.format(Locale.getDefault(),"São %.2f centimetros.", valor );
 
                 result.setText(message);
             } else {
